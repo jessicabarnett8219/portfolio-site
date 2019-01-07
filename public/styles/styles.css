@@ -1,16 +1,19 @@
 * {
   box-sizing: border-box;
+}
+
+html {
   background-color: black;
 }
 
 body {
   margin: 0 auto 0 auto;
   max-width: 1500px;
-  /* border: solid 1px purple; */
+  background-color: black;
   font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: 'Gothic A1', sans-serif;
 }
 
@@ -18,9 +21,9 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: solid 1px red; */
 }
 
+/* Navbar */
 .navbar {
   width: 100%;
 }
@@ -40,28 +43,41 @@ h1 {
   font-size: 1em;
 }
 
+/* Main Sections */
 .main {
   display: flex;
   flex-direction: column;
   width: 100%;
-
 }
 
 .section {
   margin: 0 auto 0 auto;
   width: 100%;
-  /* border: solid 1px green; */
-}
-
-.landing-section {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 100vh;
+}
+
+.section-container-white {
+  background-color: white;
+  width: 100%;
+}
+
+.section-container-black {
+  background-color: black;
+  width: 100%;
   color: white;
 }
 
-.landing-section-heading {
+.transparent-button {
+  background-color: transparent;
+  border: 1px solid #00d4d4;
+  color: #00d4d4;
+}
+
+/* Landing Section */
+.section-landing-heading {
   line-height: .9em;
 }
 
@@ -89,13 +105,31 @@ h1 {
   justify-content: flex-start;
 }
 
-.transparent-button {
-  background-color: transparent;
-  border: 1px solid #00d4d4;
-  color: #00d4d4;
+/* About Section */
+.section-about {
+  width: 80%;
 }
 
+.section-about-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
+/* Work Section */
+.section-work {
+  width: 80%;
+}
+
+.section-work-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-content-item {
+  /* flex: 0 0 33%; */
+  text-align: center;
+}
 
 /* For Tablets */
 @media only screen and (min-width: 600px) {
@@ -121,6 +155,11 @@ h1 {
 
   .landing-title {
     font-size: 1em;
+  }
+
+  .work-content-item {
+    flex: 0 0 33%;
+    text-align: center;
   }
 }
 
