@@ -1,22 +1,43 @@
 * {
   box-sizing: border-box;
+  background-color: black;
 }
 
 body {
   margin: 0 auto 0 auto;
   max-width: 1500px;
-  border: solid 1px purple;
+  /* border: solid 1px purple; */
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Gothic A1', sans-serif;
 }
 
 .page-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 1px red;
+  /* border: solid 1px red; */
 }
 
 .navbar {
   width: 100%;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-li {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #00d4d4;
+  font-size: 1em;
 }
 
 .main {
@@ -29,36 +50,52 @@ body {
 .section {
   margin: 0 auto 0 auto;
   width: 100%;
-  border: solid 1px green;
+  /* border: solid 1px green; */
+}
 
+.landing-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.landing-section-heading {
+  line-height: .9em;
 }
 
 .landing-greeting {
   font-size: .75em;
+  color: #00d4d4;
+  display: inline-block;
 }
 
 .landing-name {
-  font-size: 1.25em;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .landing-title {
   font-size: .75em;
+  color: #bebebe;
+  display: inline-block;
+
 }
 
-
-.navbar-list {
+.landing-button-container {
   display: flex;
-  list-style: none;
-  justify-content: flex-end;
-  /* align-items: center; */
-  border: solid 1px black;
-  width: 100%;
+  justify-content: flex-start;
 }
 
-.navbar-li {
-  margin-top: 0;
-  margin-bottom: 0;
+.transparent-button {
+  background-color: transparent;
+  border: 1px solid #00d4d4;
+  color: #00d4d4;
 }
+
+
 
 /* For Tablets */
 @media only screen and (min-width: 600px) {
@@ -71,6 +108,19 @@ body {
 @media only screen and (min-width: 992px) {
   .section {
     width: 75%;
+  }
+  .landing-greeting {
+    font-size: 1em;
+  }
+
+  .landing-name {
+    font-size: 1.75em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .landing-title {
+    font-size: 1em;
   }
 }
 
