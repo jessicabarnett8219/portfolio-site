@@ -1,0 +1,4 @@
+default:
+  - "eslint"
+  - "http-server"
+  - "watch"
