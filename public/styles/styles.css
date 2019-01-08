@@ -17,15 +17,6 @@ h1, h2, h3 {
   font-family: 'Gothic A1', sans-serif;
 }
 
-/* h2:before {
-  content: "";
-  display: inline-block;
-  width: 6px;
-  height: 23px;
-  background-color: #00d4d4;
-  margin-right: 10px;
-} */
-
 a, a:visited, a:active, a:hover {
   text-decoration: none;
 }
@@ -54,6 +45,11 @@ a, a:visited, a:active, a:hover {
   margin-bottom: 0;
   color: #00d4d4;
   font-size: 1em;
+}
+
+.navbar-li > a:hover {
+  color: white;
+  font-weight: bolder;
 }
 
 /* Main Sections */
@@ -102,7 +98,7 @@ a, a:visited, a:active, a:hover {
 }
 
 
-a:hover {
+.section-landing-heading > a:hover {
   color: white;
   font-weight: bolder;
 }
@@ -150,6 +146,33 @@ a:hover {
 .section-about-headshot {
   flex: 0 0 350px;
   max-width: 100%;
+}
+
+.about-contact-list {
+  list-style: none;
+}
+
+.about-contact-list > li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.about-contact-label > a:hover {
+  color: #00d4d4;
+}
+
+.about-contact-item-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-contact-icon {
+  margin-right: .75rem;
+}
+
+.about-contact-icon > img {
+  width: 100%;
+  max-width: 24px;
 }
 
 
