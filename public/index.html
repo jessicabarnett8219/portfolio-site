@@ -17,71 +17,91 @@
   <div class="page-container">
     <nav class="navbar">
       <ul class="navbar-list padding-vertical-xs padding-horizontal-s">
-        <li class="navbar-li">About</li>
-        <li class="navbar-li margin-left-xs">Work</li>
-        <li class="navbar-li margin-left-xs">Experience</li>
+        <li class="navbar-li"><a href="#about">About</a></li>
+        <li class="navbar-li margin-left-xs"><a href="#portfolio">Portfolio</a></li>
+        <li class="navbar-li margin-left-xs"><a href="#experience">Experience</a></li>
         <li class="navbar-li margin-left-xs">Contact</li>
-        <li class="navbar-li"><button class="transparent-button margin-left-xs">
-            Download Resume
+        <li class="navbar-li"><button class="nav-button margin-left-xs">
+            Resume
           </button></li>
       </ul>
     </nav>
     <div class="main">
       <div class="section-container-black">
         <section class="section section-landing padding-horizontal-xs">
-          <h1 class="section-landing-heading"><span class="landing-greeting">Hello I'm</span><br>
+          <h1 class="section-landing-heading"><span class="landing-greeting">Hello, I'm</span><br>
             <span class="landing-name">Jessica Barnett</span><br>
             <span class="landing-title">a Software Developer in Nashville, TN</span></h1>
           <div class="landing-button-container">
-            <button class="transparent-button">View Work</button>
-            <button class="transparent-button margin-left-xs">Download Resume</button>
+            <button class="landing-button">View Portfolio</button>
+            <button class="landing-button margin-left-xs">Download Resume</button>
           </div>
         </section>
       </div>
 
-      <div class="section-container-white">
+      <div class="section-container-white" id="about">
         <section class="section section-about padding-horizontal-xs">
-          <h2 class="margin-bottom-xs">About</h2>
           <div class="section-about-content">
-            <p class="no-margin-top">Nulla auctor dolor dictum enim imperdiet tristique. Vestibulum ex felis,
-              consectetur id volutpat quis,
-              commodo sed quam. Pellentesque accumsan sagittis nunc, vel dignissim diam molestie a. In id euismod nisl.
-              Morbi scelerisque mi non ipsum aliquet hendrerit. Fusce elementum blandit purus, et euismod lorem
-              vehicula
-              et. Nulla dui ligula, euismod a tempus vitae, efficitur at ante.</p>
-            <!-- <img class="section-about-headshot" src="images/placeholder-headshot.png"> -->
+            <div class="section-about-bio">
+              <h2 class="margin-bottom-xs">About Me</h2>
+              <p class="no-margin-top">Nulla auctor dolor dictum enim imperdiet tristique. Vestibulum ex felis,
+                consectetur id volutpat quis,
+                commodo sed quam. Pellentesque accumsan sagittis nunc, vel dignissim diam molestie a. In id euismod
+                nisl.
+                Morbi scelerisque mi non ipsum aliquet hendrerit. Fusce elementum blandit purus, et euismod lorem
+                vehicula
+                et. Nulla dui ligula, euismod a tempus vitae, efficitur at ante.</p>
+            </div>
+            <div class="section-about-headshot">
+              <img src="images/placeholder-headshot.png">
+            </div>
+          </div>
+          <div class="section-about-technology margin-top-s">
+            <h3 class="">Technologies I've Worked With</h3>
           </div>
         </section>
       </div>
 
-      <div class="section-container-black">
+      <div class="section-container-black" id="portfolio">
         <section class="section section-work padding-horizontal-xs">
-          <h2>Work</h2>
+          <h2>Portfolio</h2>
           <div class="section-work-content">
             <div class="work-content-item">
-              <h3>FermentStation</h3>
+              <!-- <h3>FermentStation</h3> -->
+            </div>
+            <div class="work-content-item work-content-item-center">
+              <!-- <h3>Nutshell</h3> -->
             </div>
             <div class="work-content-item">
-              <h3>Nutshell</h3>
+              <!-- <h3>Backend Capstone</h3> -->
             </div>
-            <div class="work-content-item">
-              <h3>Backend Capstone</h3>
-            </div>
-
-
-
           </div>
         </section>
       </div>
 
+      <div class="section-container-white" id="experience">
+        <section class="section section-experience padding-horizontal-xs">
+          <h2>Experience</h2>
+          <ul>
+            <li>Nam condimentum leo non massa congue, eget molestie neque volutpat.
+              Integer gravida orci quis interdum molestie.</li>
+            <li>Suspendisse ut neque in dolor porttitor consectetur quis nec sapien.</li>
+            <li>Quisque blandit odio vitae libero dignissim, quis suscipit elit dignissim.</li>
+            <li>Cras ut orci a sapien iaculis molestie vitae sit amet risus.
+              Ut elementum ipsum eget eleifend egestas.</li>
+            <li>Aenean dignissim sem feugiat, posuere lacus vitae, euismod nisi.
+              Pellentesque vehicula nunc non fringilla iaculis.</li>
 
-      <section class="section section-experience padding-horizontal-xs">
-        <h1>Experience</h1>
 
-      </section>
+
+
+          </ul>
+        </section>
+      </div>
+
 
       <section class="section section-contact padding-horizontal-xs">
-        <h1>Contact Me</h1>
+        <h2>Contact Me</h2>
 
       </section>
     </div>
