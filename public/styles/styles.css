@@ -1,9 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
 html {
   background-color: black;
+  font-size: 62.5%;
 }
 
 body {
@@ -11,6 +8,16 @@ body {
   max-width: 1500px;
   background-color: black;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 h1, h2, h3 {
@@ -70,8 +77,8 @@ ul {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .section-container-white {
@@ -109,7 +116,7 @@ ul {
 
 /* Landing Section */
 .section-landing-heading {
-  line-height: .9em;
+  line-height: 2rem;
 }
 
 .landing-greeting {
@@ -144,13 +151,24 @@ ul {
 .section-about-content {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 
 .section-about-headshot {
-  flex: 0 0 350px;
+  width: 350px;
+  height: auto;
+  flex: 1 0 auto;
   max-width: 100%;
 }
+
+.section-about-headshot > img {
+  width: 100%;
+}
+
+.section-about-bio {
+  flex: 0 1 auto;
+  max-width: 100%;
+}
+
 
 .about-contact-list > li {
   margin-left: 0;
@@ -212,14 +230,15 @@ ul {
     width: 85%;
   }
   .section-about-content {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 
   .section-about-headshot {
-    display: flex;
-    justify-content: center;
-    flex: 1 0 300px;
-    max-width: 100%;
+    width: 275px;
+    height: auto;
+    flex: 1 0 auto;
+    margin-left: 2rem;
   }
 
   .section-work-content {
@@ -256,16 +275,12 @@ ul {
     font-size: 1em;
   }
 
-  .section-about-content {
-    flex-wrap: nowrap;
+  .section-about-headshot {
+    width: 350px;
+    height: auto;
+    flex: 1 0 auto;
   }
 
-  .section-about-headshot {
-    display: inline;
-    flex: 1 0 300px;
-    max-width: 100%;
-    margin-left: 20px;
-  }
 }
 
 
