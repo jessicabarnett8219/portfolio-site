@@ -21,6 +21,10 @@ a, a:visited, a:active, a:hover {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -148,10 +152,6 @@ a, a:visited, a:active, a:hover {
   max-width: 100%;
 }
 
-.about-contact-list {
-  list-style: none;
-}
-
 .about-contact-list > li {
   margin-left: 0;
   padding-left: 0;
@@ -173,6 +173,17 @@ a, a:visited, a:active, a:hover {
 .about-contact-icon > img {
   width: 100%;
   max-width: 24px;
+}
+
+.about-tech-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tech-icon {
+  width: 100%;
+  max-width: 100px;
 }
 
 
