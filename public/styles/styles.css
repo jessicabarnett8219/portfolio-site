@@ -1,12 +1,12 @@
 html {
-  background-color: black;
+  background-color: #0b0c10;
   font-size: 62.5%;
 }
 
 body {
   margin: 0 auto 0 auto;
   max-width: 1500px;
-  background-color: black;
+  background-color: #0b0c10;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
 }
@@ -41,6 +41,9 @@ ul {
 /* Navbar */
 .navbar {
   width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #0b0c10;
 }
 
 .navbar-list {
@@ -68,6 +71,7 @@ ul {
   display: flex;
   flex-direction: column;
   width: 100%;
+  /* margin-top: 40px; */
 }
 
 .section {
@@ -82,12 +86,13 @@ ul {
 }
 
 .section-container-white {
-  background-color: white;
+  background-color: #f2f2f2;
+  /* color: white; */
   width: 100%;
 }
 
 .section-container-black {
-  background-color: black;
+  background-color: #0b0c10;
   width: 100%;
   color: white;
 }
@@ -146,7 +151,9 @@ ul {
 /* About Section */
 .section-about {
   width: 80%;
+  margin-top: 85px;
 }
+
 
 .section-about-content {
   display: flex;
@@ -223,6 +230,7 @@ ul {
   border: 1px solid  #00d4d4;
   margin-bottom: 10px;
 }
+
 
 /* For Tablets */
 @media only screen and (min-width: 700px) {
