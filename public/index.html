@@ -6,27 +6,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Jessica Barnett - Software Developer Nashville, TN</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Gothic+A1:900|Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bigfishtv-turret/4.0.0/turret.min.css"
     crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
-
 </head>
 
 <body>
   <div class="page-container">
     <nav class="navbar">
-      <ul class="navbar-list padding-vertical-xs padding-horizontal-s">
-        <li class="navbar-li"><a href="#about">About</a></li>
-        <li class="navbar-li margin-left-xs"><a href="#portfolio">Portfolio</a></li>
-        <li class="navbar-li margin-left-xs"><a href="#experience">Experience</a></li>
-        <li class="navbar-li margin-left-xs">Contact</li>
-        <li class="navbar-li"><button class="nav-button margin-left-xs">
-            Resume
-          </button></li>
-      </ul>
+      <div>
+        <ul class="navbar-contact-icons padding-vertical-xs padding-horizontal-s">
+          <li class="navbar-icon"><a href="mailto:jessica.barnett8219@gmail.com"><img src="images/baseline-email-24px-blue.svg"></a></li>
+          <li class="navbar-icon"><a href="tel:+1-502-338-0908"><img src="images/baseline-phone-24px-blue.svg"></a></li>
+          <li class="navbar-icon"><a href="https://www.linkedin.com/in/jessicacbarnett/"><img src="images/linkedin-icon-blue.svg"></a></li>
+          <li class="navbar-icon"><a href="https://github.com/jessicabarnett8219"><img src="images/github-icon-blue.svg"></a></li>
+        </ul>
+      </div>
+      <div class="navbar-mobile-menu">
+        <img src="images/baseline-menu-24px.svg">
+      </div>
+      <div>
+        <ul class="navbar-list padding-vertical-xs padding-horizontal-s">
+          <li class="navbar-li"><a href="#about">About</a></li>
+          <li class="navbar-li margin-left-xs"><a href="#portfolio">Portfolio</a></li>
+          <li class="navbar-li margin-left-xs"><a href="#experience">Experience</a></li>
+          <li class="navbar-li margin-left-xs">Contact</li>
+          <li class="navbar-li"><button class="nav-button margin-left-xs">
+              Resume
+            </button></li>
+        </ul>
+      </div>
     </nav>
     <div class="main">
+      <!-- #### Landing Section -->
       <div class="section-container-black">
         <section class="section section-landing padding-horizontal-xs">
           <h1 class="section-landing-heading"><span class="landing-greeting">Hello, I'm</span><br>
@@ -38,12 +52,12 @@
           </div>
         </section>
       </div>
-
+      <!-- #### About Section -->
       <div class="section-container-white" id="about">
         <section class="section section-about padding-horizontal-xs">
           <div class="section-about-content">
             <div class="section-about-bio">
-              <h2 class="margin-bottom-xs">About Me</h2>
+              <h2>About Me</h2>
               <p class="no-margin-top">Nulla auctor dolor dictum enim imperdiet tristique. Vestibulum ex felis,
                 consectetur id volutpat quis,
                 commodo sed quam. Pellentesque accumsan sagittis nunc, vel dignissim diam molestie a. In id euismod
@@ -51,17 +65,95 @@
                 Morbi scelerisque mi non ipsum aliquet hendrerit. Fusce elementum blandit purus, et euismod lorem
                 vehicula
                 et. Nulla dui ligula, euismod a tempus vitae, efficitur at ante.</p>
+              <ul class="about-contact-list">
+                <li>
+                  <div class="about-contact-item-container">
+                    <div class="about-contact-icon">
+                      <img src="images/baseline-email-24px.svg">
+                    </div>
+                    <div class="about-contact-label">
+                      <a href="mailto:jessica.barnett8219@gmail.com">jessicab5128@gmail.com</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="about-contact_item">
+                  <div class="about-contact-item-container">
+                    <div class="about-contact-icon">
+                      <img src="images/baseline-phone-24px.svg">
+                    </div>
+                    <div class="about-contact-label">
+                      <a href="tel:+1-502-338-0908">502-338-0908</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="about-contact_item">
+                  <div class="about-contact-item-container">
+                    <div class="about-contact-icon">
+                      <img src="images/linkedin-icon.svg">
+                    </div>
+                    <div class="about-contact-label">
+                      <a href="https://www.linkedin.com/in/jessicacbarnett/">linkedin.com/in/jessicacbarnett</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="about-contact_item">
+                  <div class="about-contact-item-container">
+                    <div class="about-contact-icon">
+                      <img src="images/github-icon.svg">
+                    </div>
+                    <div class="about-contact-label">
+                      <a href="https://github.com/jessicabarnett8219">github.com/jessicabarnett8219</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
             <div class="section-about-headshot">
               <img src="images/placeholder-headshot.png">
             </div>
+            <!--Image Container-->
           </div>
+          <!--About Content (heading bio, headshot contact)-->
+
+
           <div class="section-about-technology margin-top-s">
             <h3 class="">Technologies I've Worked With</h3>
+            <!-- ### TODO Use CSS grid to lay this out better -->
+            <ul class="about-tech-icons">
+              <li>
+                <div><img alt="HTML 5 Logo" alt="title" class="tech-icon" src="images/tech-icons/html5-plain.svg"></div>
+              </li>
+              <li>
+                <div><img alt="CSS 3 Logo" alt="CSS 3" class="tech-icon" src="images/tech-icons/css3-plain.svg"></div>
+              </li>
+              <li>
+                <div><img alt="Javascript Logo" class="tech-icon" src="images/tech-icons/javascript-original.svg"></div>
+              </li>
+              <li>
+                <div><img alt="React Logo" class="tech-icon" src="images/tech-icons/react-original.svg"></div>
+              </li>
+              <li>
+                <div><img alt="Git Logo" class="tech-icon" src="images/tech-icons/git-plain.svg"></div>
+              </li>
+              <li>
+                <div><img alt="jQuery Logo" class="tech-icon" src="images/tech-icons/jquery-plain-wordmark.svg"></div>
+              </li>
+              <li>
+                <div><img alt="Grunt Logo" class="tech-icon" src="images/tech-icons/grunt-plain.svg"></div>
+              </li>
+              <li>
+                <div><img alt="Adobe Illustrator Logo" class="tech-icon" src="images/tech-icons/illustrator-plain.svg"></div>
+              </li>
+              <li>
+                <div><img alt="Abode Photoshop Logo" class="tech-icon" src="images/tech-icons/photoshop-plain.svg"></div>
+              </li>
+            </ul>
           </div>
+          <!--Teacnologies Container-->
         </section>
       </div>
-
+      <!--sectioncontainer white-->
+      <!-- #### Portfolio Section -->
       <div class="section-container-black" id="portfolio">
         <section class="section section-work padding-horizontal-xs">
           <h2>Portfolio</h2>
@@ -78,7 +170,7 @@
           </div>
         </section>
       </div>
-
+      <!-- #### Experience Section -->
       <div class="section-container-white" id="experience">
         <section class="section section-experience padding-horizontal-xs">
           <h2>Experience</h2>
@@ -91,10 +183,6 @@
               Ut elementum ipsum eget eleifend egestas.</li>
             <li>Aenean dignissim sem feugiat, posuere lacus vitae, euismod nisi.
               Pellentesque vehicula nunc non fringilla iaculis.</li>
-
-
-
-
           </ul>
         </section>
       </div>
@@ -107,7 +195,10 @@
     </div>
 
   </div>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

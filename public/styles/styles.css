@@ -1,9 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
 html {
   background-color: black;
+  font-size: 62.5%;
 }
 
 body {
@@ -11,23 +8,28 @@ body {
   max-width: 1500px;
   background-color: black;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 h1, h2, h3 {
   font-family: 'Gothic A1', sans-serif;
 }
 
-/* h2:before {
-  content: "";
-  display: inline-block;
-  width: 6px;
-  height: 23px;
-  background-color: #00d4d4;
-  margin-right: 10px;
-} */
-
 a, a:visited, a:active, a:hover {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .page-container {
@@ -38,16 +40,50 @@ a, a:visited, a:active, a:hover {
 
 /* Navbar */
 .navbar {
-  width: 100%;
-}
-
-.navbar-list {
   display: flex;
-  list-style: none;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  -webkit-box-shadow: 0px 5px 22px -2px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 5px 22px -2px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 5px 22px -2px rgba(0, 0, 0, 0.26);
 }
+
+.navbar-mobile-menu {
+  margin-right: 1.75rem;
+}
+
+.navbar-mobile-menu > img {
+  width: 100%;
+  max-width: 40px;
+}
+
+.navbar-list {
+  display: none;
+}
+
+.navbar-contact-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-contact-icons > li > a > img {
+  width: 100%;
+  max-width: 30px;
+}
+
+.navbar-icon {
+  flex: 0 0 auto;
+  margin-right: calc(.75rem + .5vw);
+}
+
+.navbar-icon:last-of-type {
+  margin-right: 0;
+}
+
 
 .navbar-li {
   margin-top: 0;
@@ -56,11 +92,22 @@ a, a:visited, a:active, a:hover {
   font-size: 1em;
 }
 
+.navbar-icon {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar-li > a:hover {
+  color: white;
+  font-weight: bolder;
+}
+
 /* Main Sections */
 .main {
   display: flex;
   flex-direction: column;
   width: 100%;
+  /* margin-top: 40px; */
 }
 
 .section {
@@ -70,12 +117,13 @@ a, a:visited, a:active, a:hover {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .section-container-white {
   background-color: white;
+  /* color: white; */
   width: 100%;
 }
 
@@ -102,14 +150,14 @@ a, a:visited, a:active, a:hover {
 }
 
 
-a:hover {
+.section-landing-heading > a:hover {
   color: white;
   font-weight: bolder;
 }
 
 /* Landing Section */
 .section-landing-heading {
-  line-height: .9em;
+  line-height: 2rem;
 }
 
 .landing-greeting {
@@ -139,17 +187,64 @@ a:hover {
 /* About Section */
 .section-about {
   width: 80%;
+  margin-top: 85px;
 }
+
 
 .section-about-content {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 
 .section-about-headshot {
-  flex: 0 0 350px;
+  width: 350px;
+  height: auto;
+  flex: 1 0 auto;
   max-width: 100%;
+}
+
+.section-about-headshot > img {
+  width: 100%;
+}
+
+.section-about-bio {
+  flex: 0 1 auto;
+  max-width: 100%;
+}
+
+
+.about-contact-list > li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.about-contact-label > a:hover {
+  color: #00d4d4;
+}
+
+.about-contact-item-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-contact-icon {
+  margin-right: .75rem;
+}
+
+.about-contact-icon > img {
+  width: 100%;
+  max-width: 24px;
+}
+
+.about-tech-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tech-icon {
+  width: 100%;
+  max-width: 100px;
 }
 
 
@@ -172,20 +267,23 @@ a:hover {
   margin-bottom: 10px;
 }
 
+
 /* For Tablets */
 @media only screen and (min-width: 700px) {
+
   .section {
     width: 85%;
   }
   .section-about-content {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 
   .section-about-headshot {
-    display: flex;
-    justify-content: center;
-    flex: 1 0 300px;
-    max-width: 100%;
+    width: 275px;
+    height: auto;
+    flex: 1 0 auto;
+    margin-left: 2rem;
   }
 
   .section-work-content {
@@ -205,6 +303,18 @@ a:hover {
 
 /* For Desktop */
 @media only screen and (min-width: 900px) {
+  .navbar-list {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-mobile-menu {
+    display: none;
+  }
+
   .section {
     width: 75%;
   }
@@ -222,16 +332,12 @@ a:hover {
     font-size: 1em;
   }
 
-  .section-about-content {
-    flex-wrap: nowrap;
+  .section-about-headshot {
+    width: 350px;
+    height: auto;
+    flex: 1 0 auto;
   }
 
-  .section-about-headshot {
-    display: inline;
-    flex: 1 0 300px;
-    max-width: 100%;
-    margin-left: 20px;
-  }
 }
 
 
