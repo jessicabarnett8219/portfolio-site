@@ -1,12 +1,12 @@
 html {
-  background-color: #0b0c10;
+  background-color: black;
   font-size: 62.5%;
 }
 
 body {
   margin: 0 auto 0 auto;
   max-width: 1500px;
-  background-color: #0b0c10;
+  background-color: black;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4rem;
 }
@@ -46,10 +46,10 @@ ul {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: #0b0c10;
-  -webkit-box-shadow: 0px 5px 22px -2px rgba(11,12,16,0.26);
-  -moz-box-shadow: 0px 5px 22px -2px rgba(11,12,16,0.26);
-  box-shadow: 0px 5px 22px -2px rgba(11,12,16,0.26);
+  background-color: black;
+  -webkit-box-shadow: 0px 5px 22px -2px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 5px 22px -2px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 5px 22px -2px rgba(0, 0, 0, 0.26);
 }
 
 .navbar-mobile-menu {
@@ -122,13 +122,13 @@ ul {
 }
 
 .section-container-white {
-  background-color: #f2f2f2;
+  background-color: white;
   /* color: white; */
   width: 100%;
 }
 
 .section-container-black {
-  background-color: #0b0c10;
+  background-color: black;
   width: 100%;
   color: white;
 }
