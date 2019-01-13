@@ -52,12 +52,17 @@ ul {
   box-shadow: 0px 5px 22px -2px rgba(11,12,16,0.26);
 }
 
-.navbar-list {
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-  align-items: center;
+.navbar-mobile-menu {
+  margin-right: 1.75rem;
+}
+
+.navbar-mobile-menu > img {
   width: 100%;
+  max-width: 40px;
+}
+
+.navbar-list {
+  display: none;
 }
 
 .navbar-contact-icons {
@@ -73,6 +78,10 @@ ul {
 .navbar-icon {
   flex: 0 0 auto;
   margin-right: calc(.75rem + .5vw);
+}
+
+.navbar-icon:last-of-type {
+  margin-right: 0;
 }
 
 
@@ -261,6 +270,7 @@ ul {
 
 /* For Tablets */
 @media only screen and (min-width: 700px) {
+
   .section {
     width: 85%;
   }
@@ -293,6 +303,18 @@ ul {
 
 /* For Desktop */
 @media only screen and (min-width: 900px) {
+  .navbar-list {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-mobile-menu {
+    display: none;
+  }
+
   .section {
     width: 75%;
   }
